@@ -1,7 +1,11 @@
+function getWorkingHours()
+{
+echo 8;
+}
 echo "Welcome To Employee Wage Computation"
 attendance=$((RANDOM%2))
 wagePerHour=20
-workingHours=8
+workingHours=$(getWorkingHours)
 partTimeHours=8
 daysPerMonth=20
 case $attendance in
