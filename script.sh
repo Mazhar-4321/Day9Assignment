@@ -9,6 +9,9 @@ workingHours=$(getWorkingHours)
 partTimeHours=8
 daysPerMonth=20
 newWage=$(($wagePerHour*$workingHours+$workingHours*$wagePerHour*$daysPerMonth))
+declare -a  array
+array[0]=8
+array[1]=$newWage
 case $attendance in
 	0)
 	echo "Absent"
